@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/dev-mamun/math-magicians/issues"
   },
-  "homepage": "https://github.com/dev-mamun/math-magicians#readme",
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
