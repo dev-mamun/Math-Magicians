@@ -6,6 +6,7 @@
 
 - [📖 About the Project](#about-project)
 - [🛠 Tech Stack](#tech-stack)
+- [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -14,6 +15,7 @@
     - [Usage](#usage)
     - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Author](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Available Scripts](#available-scripts)
@@ -37,6 +39,13 @@ _Math magicians is a website for all fans of mathematics. It is a Single Page Ap
 - Webpack
 - React
 - [Linters](https://github.com/microverseinc/linters-config/tree/master/react-redux)
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- Setup react app
+- Configure linter
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,6 +133,14 @@ To check for js errors run:
 - GitHub: [@dev-mamun](https://github.com/dev-mamun)
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
 - LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Add Style.
+- add the logic needed to make the Calculator component work
+- fetch data from an external API to display "quotes" alongside your calculator.
 
 <!-- CONTRIBUTING -->
 
