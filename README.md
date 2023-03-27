@@ -15,37 +15,35 @@
     - [Usage](#usage)
     - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Author](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [🙏 Available Scripts](#available-scripts)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Art Work <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
-> JavaScript project - API-based webapp,
-> using webpack and ES6 features, notably modules.
+_Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+- Make simple calculations.
+- Read a random math-related quote.
 
-[Click here for more details](https://drive.google.com/file/d/1LYydyYqSOkU87gT0mqQCmJSEh4yyvoad/view?usp=share_link)
 
 ### 🛠 Tech Stack <a name="tech-stack"></a>
 
 - HTML
 - CSS
-- JavaScript ES6
-- NodeJS
+- JavaScript
 - Webpack
+- React
+- [Linters](https://github.com/microverseinc/linters-config/tree/master/react-redux)
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- Use callbacks and promises
-- Use ES6 modules to write modular JavaScript.
-- Use webpack to bundle JavaScript.
+- Not Available!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://dev-mamun.github.io/Art-Gallery/dist/)
+[Not Available!]()
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -82,7 +80,7 @@ Once you have git installed on your machine you can clone project by running the
 To clone your project to your local machine
 
 ```sh
-  git clone git@github.com:dev-mamun/js-capstone.git
+  git clone https://github.com/dev-mamun/math-magicians.git
 ```
 
 Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your
@@ -93,8 +91,9 @@ project page and clicking on `Download ZIP`
 Install this project with:
 
 ```sh
-  cd js-capstone
+  cd math-magicians
   npm install
+  npm run build
 ```
 
 ### Usage
@@ -102,8 +101,9 @@ Install this project with:
 To run the project, use the following : (Port 3000)
 
 ```
-  npm run dev
-  browse http://localhost:3000/
+  npm start
+  Runs the app in the development mode.\
+  Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ```
 
 
@@ -113,10 +113,6 @@ To run the project, use the following : (Port 3000)
 
 To run tests, run the following command:
 
-To check for html errors run:
-```sh
-  npx hint .
-```
 To check for css errors run:
 ```sh
   npx stylelint "**/*.{css,scss}"
@@ -128,31 +124,13 @@ To check for js errors run:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="author"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **Abdullah AL mamun**
 
 - GitHub: [@dev-mamun](https://github.com/dev-mamun)
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
 - LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
-
-👤 **Anita Sharma**
-
-- GitHub: [@anita00001](https://github.com/anita00001)
-- Twitter: [@anitaa_sharmaa](https://twitter.com/anitaa_sharmaa)
-- LinkedIn: [anitaa-sharmaa](https://www.linkedin.com/in/anitaa-sharmaa/)
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- Fetch Data using api
-- Art work list
-- Like count 
-- User Like
-- Comments Popup
-- Reservation Popup
-
 
 <!-- CONTRIBUTING -->
 
@@ -175,19 +153,14 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+## Available Scripts <a name="available-scripts"></a>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+In the project directory, you can run:
 
-I would like to thank...
-
-- Teammates
-- YouTube tutorials
-- Microverse guides
-- Google Search
-- [Art Institute of Chicago API](https://api.artic.edu/docs/#quick-start)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- `npm start` - _To run the app in the development mode._
+- `npm test` - _To launch the test runner in the interactive watch mode._
+- `npm run buid` - _To build the app for production to the build folder.Learn more at [deployment](https://create-react-app.dev/docs/deployment/)_
+- `npm run eject` - _To remove the single build dependency from your project. **Note this is a one-way operation. Once you eject, you can't go back!**_
 
 <!-- FAQ (optional) -->
 
@@ -214,5 +187,11 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+## Learn More
+
+Learn more at [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out [React documentation](https://reactjs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
