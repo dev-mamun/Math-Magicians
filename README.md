@@ -6,7 +6,6 @@
 
 - [📖 About the Project](#about-project)
 - [🛠 Tech Stack](#tech-stack)
-- [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -38,12 +37,6 @@ _Math magicians is a website for all fans of mathematics. It is a Single Page Ap
 - Webpack
 - React
 - [Linters](https://github.com/microverseinc/linters-config/tree/master/react-redux)
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- Not Available!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
