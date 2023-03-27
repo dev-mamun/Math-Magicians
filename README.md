@@ -140,7 +140,6 @@ To check for js errors run:
 
 - Add Style.
 - add the logic needed to make the Calculator component work
-- fetch data from an external API to display "quotes" alongside your calculator.
 
 <!-- CONTRIBUTING -->
 
