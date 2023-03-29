@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.calculator {
+  margin: 10px;
+  width: 250px;
+  min-height: 250px;
+}
+
+.dispaly {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(155, 160, 164, 0.831);
+  background-color: rgba(155, 160, 164, 0.831);
+  text-align: right;
+  padding: 5px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cal-btn {
+  width: 3.93rem;
+  height: 3rem;
+  border: 1px solid #fff;
+  background-color: rgb(224, 224, 224);
+}
+
+.btn-col:last-child > button {
+  background-color: rgba(231, 117, 60, 0.904);
+}
+
+.btn-row:last-child > .btn-col:first-child > button {
+  width: 7.87rem;
+}
