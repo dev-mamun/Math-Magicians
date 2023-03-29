@@ -46,6 +46,8 @@ _Math magicians is a website for all fans of mathematics. It is a Single Page Ap
 
 - Setup react app
 - Configure linter
+- Add Components.
+- Add Events.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
