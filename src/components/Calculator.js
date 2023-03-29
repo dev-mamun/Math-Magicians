@@ -18,7 +18,7 @@ function Calculator() {
           <div className="btn-col"><Buttons label="AC" /></div>
           <div className="btn-col"><Buttons label="+/-" /></div>
           <div className="btn-col"><Buttons label="%" /></div>
-          <div className="btn-col"><Buttons label="/" /></div>
+          <div className="btn-col"><Buttons label="÷" /></div>
         </div>
         <div className="btn-row">
           <div className="btn-col"><Buttons label="7" /></div>
