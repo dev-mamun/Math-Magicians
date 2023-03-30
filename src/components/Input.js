@@ -5,24 +5,26 @@
  * Author: Abdullah Al Mamun <mamun1214@gmail.com>
  ****************************************** */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function InputFied(props) {
-  const res = { props };
-
+export default function InputFied({ display }) {
   const inputChangedHandler = (event) => {
     const updatedKeyword = event.target.value;
     console.log('inputChangedHandler: ', updatedKeyword);
   };
 
-  console.log('InputFied:', res);
   return (
     <div className="dispaly">
       <input
         className="input"
-        placeholder={res.props.resObj.next || res.props.total}
-        value={`${res.props.resObj.next ? res.props.resObj.total + res.props.resObj.operation + res.props.resObj.next : res.props.resObj.total || 0}`}
+        placeholder={display}
+        value={display}
         onChange={(event) => inputChangedHandler(event)}
       />
     </div>
   );
 }
+
+InputFied.propTypes = {
+  display: PropTypes.string.isRequired,
+};

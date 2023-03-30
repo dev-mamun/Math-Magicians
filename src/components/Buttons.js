@@ -9,21 +9,33 @@ import calculate from '../logic/calculate';
 import InputFied from './Input';
 
 function Buttons() {
+  const [display, setDisplay] = useState('0');
   const [calObj, setCalObj] = useState({
-    total: 0,
-    next: 0,
+    total: null,
+    next: null,
     operation: null,
   });
+  const btnHandler = (buttonName) => {
+    const $data = calculate(calObj, buttonName.toString());
+    setCalObj($data);
+
+    // Update the display value
+    const $total = $data.total || '';
+    const $next = $data.next || '';
+    const $operator = $data.operation || '';
+    const $display = $total + $operator + $next;
+    setDisplay($display);
+  };
   return (
     <>
-      <InputFied resObj={calObj} />
+      <InputFied display={display} />
       <div className="buttons">
         <div className="btn-row">
           <div className="btn-col">
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate(calObj, 'AC'))}
+              onClick={() => btnHandler('AC')}
             >
               AC
             </button>
@@ -32,7 +44,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '+/-'))}
+              onClick={() => btnHandler('+/-')}
             >
               +/-
             </button>
@@ -41,7 +53,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '%'))}
+              onClick={() => btnHandler('%')}
             >
               %
             </button>
@@ -50,7 +62,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '÷'))}
+              onClick={() => btnHandler('÷')}
             >
               ÷
             </button>
@@ -61,7 +73,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}7`, 10) || 7 })}
+              onClick={() => btnHandler('7')}
             >
               7
             </button>
@@ -70,7 +82,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 8 })}
+              onClick={() => btnHandler('8')}
             >
               8
             </button>
@@ -79,13 +91,17 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 9 })}
+              onClick={() => btnHandler('9')}
             >
               9
             </button>
           </div>
           <div className="btn-col">
-            <button type="button" className="cal-btn" onClick={() => setCalObj(calculate({ ...calObj }, '*'))}>
+            <button
+              type="button"
+              className="cal-btn"
+              onClick={() => btnHandler('x')}
+            >
               *
             </button>
           </div>
@@ -95,7 +111,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 4 })}
+              onClick={() => btnHandler(4)}
             >
               4
             </button>
@@ -104,7 +120,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 5 })}
+              onClick={() => btnHandler(5)}
             >
               5
             </button>
@@ -113,7 +129,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 6 })}
+              onClick={() => btnHandler(6)}
             >
               6
             </button>
@@ -122,7 +138,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '-'))}
+              onClick={() => btnHandler('-')}
             >
               -
             </button>
@@ -133,7 +149,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 1 })}
+              onClick={() => btnHandler(1)}
             >
               1
             </button>
@@ -142,7 +158,16 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 3 })}
+              onClick={() => btnHandler(2)}
+            >
+              2
+            </button>
+          </div>
+          <div className="btn-col">
+            <button
+              type="button"
+              className="cal-btn"
+              onClick={() => btnHandler(3)}
             >
               3
             </button>
@@ -151,16 +176,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 4 })}
-            >
-              4
-            </button>
-          </div>
-          <div className="btn-col">
-            <button
-              type="button"
-              className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '+'))}
+              onClick={() => btnHandler('+')}
             >
               +
             </button>
@@ -171,7 +187,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj({ ...calObj, next: parseInt(`${calObj.next}`, 10) || 0 })}
+              onClick={() => btnHandler(0)}
             >
               0
             </button>
@@ -180,7 +196,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '.'))}
+              onClick={() => btnHandler('.')}
             >
               .
             </button>
@@ -189,7 +205,7 @@ function Buttons() {
             <button
               type="button"
               className="cal-btn"
-              onClick={() => setCalObj(calculate({ ...calObj }, '='))}
+              onClick={() => btnHandler('=')}
             >
               =
             </button>
