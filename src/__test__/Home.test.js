@@ -21,6 +21,6 @@ it('Home UI', () => {
       <Home />
     </BrowserRouter>,
   );
-  const Element = screen.getByText('Welcome To Our Page!');
+  const Element = screen.getByText(/Welcome To Our Page!/i);
   expect(Element).toBeInTheDocument();
 });

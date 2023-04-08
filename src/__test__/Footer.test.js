@@ -20,6 +20,6 @@ it('Footer UI', () => {
       <Footer />
     </BrowserRouter>,
   );
-  const Element = screen.getByText('© 2023 Created by Abdullah Al Mamun');
+  const Element = screen.getByText(/© 2023 Created by Abdullah Al Mamun/i);
   expect(Element).toBeInTheDocument();
 });
