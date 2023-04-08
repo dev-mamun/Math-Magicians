@@ -190,10 +190,4 @@ In the project directory, you can run:
 
 This project is [MIT](./LICENSE) licensed.
 
-## Learn More
-
-Learn more at [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out [React documentation](https://reactjs.org/).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
