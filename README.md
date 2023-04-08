@@ -106,11 +106,11 @@ To run the project, use the following : (Port 3000)
 
 ### Run tests
 
+To run tests, run the following command:
+
 ```
    npm run test
 ```
-
-To run tests, run the following command:
 
 To check for css errors run:
 ```sh
