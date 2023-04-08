@@ -11,7 +11,11 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from '../components/Header';
 
 it('Header Render Correctly', () => {
-  const tree = render(<BrowserRouter><Header /></BrowserRouter>);
+  const tree = render(
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>,
+  );
   expect(tree).toMatchSnapshot();
 });
 
@@ -21,6 +25,6 @@ it('Header UI', () => {
       <Header />
     </BrowserRouter>,
   );
-  const Element = screen.getByText('Math Magicians');
+  const Element = screen.getByText(/Math Magicians/i);
   expect(Element).toBeInTheDocument();
 });
