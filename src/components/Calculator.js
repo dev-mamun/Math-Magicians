@@ -9,8 +9,15 @@ import Buttons from './Buttons';
 
 function Calculator() {
   return (
-    <div className="calculator">
-      <Buttons />
+    <div className="row">
+      <div className="col-8">
+        <h1>Let&apos;s Do Some Math!</h1>
+      </div>
+      <div className="col-4">
+        <div className="calculator">
+          <Buttons />
+        </div>
+      </div>
     </div>
   );
 }
