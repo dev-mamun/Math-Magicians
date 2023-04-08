@@ -12,7 +12,6 @@ export default function Quotes() {
   const [quote, setQuote] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
   const handleFetch = async () => {
     const $url = 'https://api.api-ninjas.com/v1/quotes';
     setIsLoading(true);
