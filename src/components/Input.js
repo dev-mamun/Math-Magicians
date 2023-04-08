@@ -8,12 +8,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function InputFied({ display }) {
+  const changedHandler = (event) => event.target.value;
+
   return (
     <div className="dispaly">
       <input
+        type="text"
         className="input"
         placeholder={display}
         value={display}
+        onChange={(event) => changedHandler(event)}
       />
     </div>
   );
