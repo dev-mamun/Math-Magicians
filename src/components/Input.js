@@ -11,6 +11,7 @@ export default function InputFied({ display }) {
   return (
     <div className="dispaly">
       <input
+        type="text"
         className="input"
         placeholder={display}
         value={display}
