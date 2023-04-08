@@ -7,6 +7,7 @@
 - [📖 About the Project](#about-project)
 - [🛠 Tech Stack](#tech-stack)
 - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -50,6 +51,13 @@ _Math magicians is a website for all fans of mathematics. It is a Single Page Ap
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](https://math-magician-l9vh.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
